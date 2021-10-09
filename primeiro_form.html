@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+        <p> Responda o formulário abaixo </p>
+        
+        <div class="field">
+            <label for="nome">Qual o seu nome? </label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo*" required>
+        </div>
+        
+        <div class="field">
+            <label for="telefone">Onde você mora?</label>
+            <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
+        </div>
+
+        <div class="field">
+            <label for="email">Qual o seu E-Mail?</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>        
+        <div class="field radiobox">
+            <span>Achou o formulário simples?</span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+        </div>
+        <div class="field">
+            <label for="mensagem">Comentários:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Comentário*" required></textarea>
+        </div>
+
+        <input type="submit" name="acao" value="Finalizar">
+    </form>
+</body>
+</html>
