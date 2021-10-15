@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="port">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume/CV Design</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="foto_perfil_ok.png" alt="foto_perfil_ok">
+            </div>
+            <div class="profile_data">
+                <p class="name">Mylena Angélica</p>
+                <span><i class="fas fa-map-marker-alt"></i> Brasília, Brasil </span>
+            </div>
+            <div class="view_more_btn">
+              <a href="#">Veja mais</a>
+            </div>
+        </div>  
+      
+       <div class="Habilidades ">
+	       <div class="title">
+	          Habilidades em construção
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item dash">
+	             <div class="icon"></div>
+	             <div class="text">Dash</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item python">
+	             <div class="icon"></div>
+	             <div class="text">Python</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item flutter">
+	             <div class="icon"></div>
+	             <div class="text">Flutter</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item react">
+	             <div class="icon"></div>
+	             <div class="text">React</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experiência</li>
+                    <li data-li="education">Educação</li>
+                    <li data-li="contact">Contato</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">Experiência de trabalho</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2021 - Atual
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Orc'estra
+									</div>
+									<div class="data">
+										Trainee na Empresa Júnior de Gamificação da UNB -FGA
+									</div>
+								</div>
+                    		</li>
+                    		
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">Educação</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2021 - Atual
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Engenharias (UNB-FGA)
+									</div>
+									<div class="data">
+										Atualmente cursando Engenharia na UNB com o intuito de escolher Engenharia de Software
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2021 - 2021	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Cell.ep
+									</div>
+									<div class="data">
+										Curso de UI/UX design com foco em app e web
+									</div>
+								</div>
+                    		</li>
+							<li>
+                    			<div class="sub_title">
+                    				2008 - 2016	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Cultura Inglesa
+									</div>
+									<div class="data">
+										Curso de inglês- Fluente
+									</div>
+								</div>
+                    		</li>
+							<li>
+                    			<div class="sub_title">
+                    				2021 - 2021	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										ENAP
+									</div>
+									<div class="data">
+										Cursos de Príncipio do Design Thinking, Problem-solving Skills
+									</div>
+								</div>
+                    		</li>
+							<li>
+                    			<div class="sub_title">
+                    				2021 - 2021	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										UNB
+									</div>
+									<div class="data">
+										Cursos da Semana universitária de 2021: Introdução a linguagem R, Workshop de automação residencial em python, Mini curso de Flutter e Firebase.
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">Contato</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">mylenangelica@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Behance</span>
+                  			<span class="info_a"><a href="https://www.behance.net/mylenaangelica">Meu Portifólio</a></p></span>
+                  		</li>                  		
+                  		<li>
+                  			<span class="info_q">Linkedin</span>
+                  			<span class="info_a"><a href="www.linkedin.com/in/mylena-angélica">Mylena Angélica</a></p></span>
+                  		</li>                  		                 		
+                  		<li>
+                  			<span class="info_q">Github</span>
+                  			<span class="info_a"><a href="https://github.com/Mylena-angelica/">Meu Perfil</a></p></span>
+                  		</li>                  		
+                  	</ul>
+                  </div>
+                </div>  
+            </div> 
+        </div>
+     
+   </div>
+</div>
+
+</body>
+</html>
