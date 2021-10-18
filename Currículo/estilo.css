@@ -6,13 +6,13 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Exo2';
 }
 
 body{
-  background: #e7f1ff;
+  background: #CBC5EA;
   font-size: 14px;
-  color: #a0acb5;
+  color: #313D5A;
   letter-spacing: 1px;
 }
 
@@ -22,7 +22,7 @@ body{
 }
 
 .wrapper .resume{
-  width: 450px;
+  width: 700px;
   margin: 5px auto;
   background: #fff;
   padding: 15px;
@@ -35,7 +35,7 @@ body{
 }
 
 .resume .profile_info .profile_img {
-  width: 100px;
+  width: 200px;  
   margin: 0 auto 5px;
 }
 
@@ -47,17 +47,17 @@ body{
 .resume .profile_info .profile_data .name {
   font-size: 20px;
   margin-bottom: 5px;
-  font-family: 'Trade Winds';
+  font-family: 'roboto';
 }
 
 .resume .profile_info .profile_data span {
   display: inline-block;
-  color: #697c8e;
+  color: #73628A;
 }
 
 .resume .view_more_btn a{
     display: block;
-    background: #5558c9;
+    background: #183642;
     color: #fff;
     padding: 10px 15px;
     width: 125px;
@@ -72,7 +72,7 @@ body{
 .resume .title{
     font-size: 16px;
     font-weight: 700;
-    color: #5558c9;
+    color: #9787e7;
     margin-bottom: 15px;
 }
 
@@ -98,34 +98,6 @@ body{
   padding: 15px 10px;
 }
 
-.skills ul li .skill_item .icon{
-  background: url("skills.png") no-repeat -1px 0;
-  width: 20px;
-  height: 22px;
-  margin: 0 auto 5px;
-}
-
-.skills ul li .skill_item.css .icon{
-  background-position: 0 -26px;
-}
-
-.skills ul li .skill_item.js .icon{
-  background-position: 0 -52px;
-   height: 24px;
-}
-
-.skills ul li .skill_item.photoshop .icon{
-  background-position: -1px -79px;
-}
-
-.skills ul li .skill_item.angular .icon{
-  background-position: -1px -101px;
-}
-
-.skills ul li .skill_item.react .icon{
-  background-position: -1px -125px;
-}
-
 .full_info_wrap .tabs ul{
   display: flex;
   width: 100%;
@@ -141,7 +113,7 @@ body{
   text-align: center;
   border-right: 1px solid #dfe4e6;
   background: #f2f4f5;
-  color: #a0acb5;
+  color: #CBC5EA;
   font-weight: 600;
   cursor: pointer;
 }
@@ -155,7 +127,7 @@ body{
 .full_info_wrap .tabs ul li.active,
 .full_info_wrap .tabs ul li:hover{
   background: #fff;
-  color: #5558c9;
+  color: #6aceb1;
 }
 
 .full_info{
@@ -179,7 +151,7 @@ body{
 .info_wrap .sub_title{
   font-size: 16px;
   font-weight: 600;
-  color: #7377ff;
+  color: #9363d1;
 }
 
 .info_wrap .info_item{
